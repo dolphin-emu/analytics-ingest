@@ -139,10 +139,8 @@ ch = ClickHouseInterface(host="localhost")
 
 
 def write_to_clickhouse(data: Dict[str, Any]):
-    # Add timestamp and date partitioning info. Types don't matter since these
-    # columns always exist.
+    # Add timestamp info. Type doesn't matter since this column always exist.
     data["ts"] = (datetime.datetime.now(), None)
-    data["date"] = (datetime.date.today(), None)
     ch.insert_event(data)
 
 
