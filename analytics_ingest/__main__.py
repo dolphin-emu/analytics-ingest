@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 # Processes serialized events from users and writes them to ClickHouse.
 
+import argparse
 import bottle  # type: ignore
 import collections
 import clickhouse_driver  # type: ignore
@@ -160,7 +161,11 @@ def do_report():
 
 
 def main():
-    bottle.run(host="localhost", port=5007)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--port", type=int, default=5007)
+    args = parser.parse_args()
+
+    bottle.run(host="localhost", port=args.port)
 
 
 if __name__ == "__main__":
