@@ -7,11 +7,19 @@ import collections
 import clickhouse_driver  # type: ignore
 import datetime
 import enum
+import prometheus_client
 import re
 import struct
 import time
 
 from typing import Any, Dict
+
+
+# Monitoring metrics.
+METRIC_REPORTS = prometheus_client.Counter("reports", "Number of reports")
+METRIC_SUCCESS = prometheus_client.Counter(
+    "successful_ingests", "Number of successfully ingested reports"
+)
 
 
 # Represents the type of an analytics event field.
@@ -148,16 +156,22 @@ def write_to_clickhouse(data: Dict[str, Any]):
 @bottle.post("/report")
 def do_report():
     report = bottle.request.body.read()
+    METRIC_REPORTS.inc()
 
     data = deserialize(report)
-    print(data)
 
     if "type" not in data:
         return "KO"
 
     write_to_clickhouse(data)
 
+    METRIC_SUCCESS.inc()
     return "OK"
+
+
+@bottle.get("/metrics")
+def do_metrics():
+    return prometheus_client.generate_latest(prometheus_client.REGISTRY)
 
 
 def main():
