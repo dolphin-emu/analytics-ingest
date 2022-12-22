@@ -2,7 +2,7 @@
   description = "Dolphin's Analytics ingest server";
 
   inputs.flake-utils.url = "github:numtide/flake-utils";
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/22.05";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.11";
   inputs.poetry2nix.url = "github:nix-community/poetry2nix";
   inputs.poetry2nix.inputs.nixpkgs.follows = "nixpkgs";
 
