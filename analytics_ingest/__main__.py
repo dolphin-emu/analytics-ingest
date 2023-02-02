@@ -174,6 +174,9 @@ def do_metrics():
     return prometheus_client.generate_latest(prometheus_client.REGISTRY)
 
 
+app = bottle.default_app()
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--port", type=int, default=5007)
