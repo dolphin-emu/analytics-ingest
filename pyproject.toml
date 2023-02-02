@@ -13,6 +13,7 @@ python = "^3.9"
 bottle = "^0.12.23"
 clickhouse-driver = "^0.2.4"
 prometheus-client = "^0.15.0"
+gunicorn = "^20.1.0"
 
 [tool.poetry.dev-dependencies]
 black = "^22.6.0"
