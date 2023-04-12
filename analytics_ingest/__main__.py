@@ -12,7 +12,7 @@ import re
 import struct
 import time
 
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 
 
 # Monitoring metrics.
@@ -28,6 +28,9 @@ DataType = collections.namedtuple("DataType", "scalar_type is_array")
 
 # Allowed field names.
 ALLOWED_FIELD_NAME_RE = re.compile(r"^[a-zA-Z0-9_-]+$")
+
+# Dashboard URL to redirect to. Configured via CLI flag.
+DASHBOARD_URL: Optional[str] = None
 
 # Interface to ClickHouse: maintains not only the client connection to the
 # database, but also a cache of the event table schema so we can support some
@@ -153,6 +156,14 @@ def write_to_clickhouse(data: Dict[str, Any]):
     ch.insert_event(data)
 
 
+@bottle.get("/")
+def do_home():
+    if DASHBOARD_URL is not None:
+        bottle.redirect(DASHBOARD_URL)
+    else:
+        bottle.abort(404, "No dashboard URL configured.")
+
+
 @bottle.post("/report")
 def do_report():
     report = bottle.request.body.read()
@@ -180,7 +191,11 @@ app = bottle.default_app()
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--port", type=int, default=5007)
+    parser.add_argument("--dashboard_url", type=str)
     args = parser.parse_args()
+
+    global DASHBOARD_URL
+    DASHBOARD_URL = args.dashboard_url
 
     bottle.run(host="localhost", port=args.port)
 
