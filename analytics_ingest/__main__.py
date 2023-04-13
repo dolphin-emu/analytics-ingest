@@ -7,6 +7,7 @@ import collections
 import clickhouse_driver  # type: ignore
 import datetime
 import enum
+import os
 import prometheus_client
 import re
 import struct
@@ -30,7 +31,7 @@ DataType = collections.namedtuple("DataType", "scalar_type is_array")
 ALLOWED_FIELD_NAME_RE = re.compile(r"^[a-zA-Z0-9_-]+$")
 
 # Dashboard URL to redirect to. Configured via CLI flag.
-DASHBOARD_URL: Optional[str] = None
+DASHBOARD_URL: Optional[str] = os.environ.get("DASHBOARD_URL")
 
 # Interface to ClickHouse: maintains not only the client connection to the
 # database, but also a cache of the event table schema so we can support some
@@ -191,11 +192,7 @@ app = bottle.default_app()
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--port", type=int, default=5007)
-    parser.add_argument("--dashboard_url", type=str)
     args = parser.parse_args()
-
-    global DASHBOARD_URL
-    DASHBOARD_URL = args.dashboard_url
 
     bottle.run(host="localhost", port=args.port)
 
