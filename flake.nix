@@ -26,7 +26,7 @@
       defaultPackage = pkgs.analytics-ingest;
 
       devShells.default = with pkgs; mkShell {
-        buildInputs = [ poetry ];
+        buildInputs = [ poetry uv ];
       };
     }
   ));
