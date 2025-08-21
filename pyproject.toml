@@ -3,7 +3,7 @@ name = "analytics-ingest"
 version = "0.1.0"
 description = "Dolphin's Analytics data ingestion server"
 authors = [{ name = "Pierre Bourdon", email = "delroth@dolphin-emu.org" }]
-requires-python = ">=3.9,<3.10"
+requires-python = ">=3.10,<3.11"
 license = "MIT"
 dependencies = [
     "bottle>=0.12.23,<0.13",

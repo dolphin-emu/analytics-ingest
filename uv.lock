@@ -1,6 +1,6 @@
 version = 1
 revision = 2
-requires-python = "==3.9.*"
+requires-python = "==3.10.*"
 
 [[package]]
 name = "analytics-ingest"
@@ -43,12 +43,11 @@ dependencies = [
     { name = "pathspec" },
     { name = "platformdirs" },
     { name = "tomli" },
-    { name = "typing-extensions" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/a6/59/e873cc6807fb62c11131e5258ca15577a3b7452abad08dc49286cf8245e8/black-22.12.0.tar.gz", hash = "sha256:229351e5a18ca30f447bf724d007f890f97e13af070bb6ad4c0a441cd7596a2f", size = 553112, upload-time = "2022-12-09T15:57:04.428Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ba/32/954bcc56b2b3b4ef52a086e3c0bdbad88a38c9e739feb19dd2e6294cda42/black-22.12.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:101c69b23df9b44247bd88e1d7e90154336ac4992502d4197bdac35dd7ee3320", size = 1556765, upload-time = "2022-12-09T16:04:18.013Z" },
-    { url = "https://files.pythonhosted.org/packages/f2/b9/06fe2dd83a2104d83c2b737f41aa5679f5a4395630005443ba4fa6fece8b/black-22.12.0-cp39-cp39-win_amd64.whl", hash = "sha256:559c7a1ba9a006226f09e4916060982fd27334ae1998e7a38b3f33a37f7a2148", size = 1204876, upload-time = "2022-12-09T16:14:45.975Z" },
+    { url = "https://files.pythonhosted.org/packages/79/d9/60852a6fc2f85374db20a9767dacfe50c2172eb8388f46018c8daf836995/black-22.12.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9eedd20838bd5d75b80c9f5487dbcb06836a43833a37846cf1d8c1cc01cef59d", size = 1556665, upload-time = "2022-12-09T16:04:10.897Z" },
+    { url = "https://files.pythonhosted.org/packages/71/57/975782465cc6b514f2c972421e29b933dfbb51d4a95948a4e0e94f36ea38/black-22.12.0-cp310-cp310-win_amd64.whl", hash = "sha256:159a46a4947f73387b4d83e87ea006dbb2337eab6c879620a3ba52699b1f4351", size = 1205632, upload-time = "2022-12-09T16:14:38.465Z" },
     { url = "https://files.pythonhosted.org/packages/0c/51/1f7f93c0555eaf4cbb628e26ba026e3256174a45bd9397ff1ea7cf96bad5/black-22.12.0-py3-none-any.whl", hash = "sha256:436cc9167dd28040ad90d3b404aec22cedf24a6e4d7de221bec2730ec0c97bcf", size = 167343, upload-time = "2022-12-09T15:57:02.229Z" },
 ]
 
@@ -63,14 +62,14 @@ wheels = [
 
 [[package]]
 name = "click"
-version = "8.1.8"
+version = "8.2.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "colorama", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b9/2e/0090cbf739cee7d23781ad4b89a9894a41538e4fcf4c31dcdd705b78eb8b/click-8.1.8.tar.gz", hash = "sha256:ed53c9d8990d83c2a27deae68e4ee337473f6330c040a31d4225c9574d16096a", size = 226593, upload-time = "2024-12-21T18:38:44.339Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/60/6c/8ca2efa64cf75a977a0d7fac081354553ebe483345c734fb6b6515d96bbc/click-8.2.1.tar.gz", hash = "sha256:27c491cc05d968d271d5a1db13e3b5a184636d9d930f148c50b038f0d0646202", size = 286342, upload-time = "2025-05-20T23:19:49.832Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7e/d4/7ebdbd03970677812aac39c869717059dbb71a4cfc033ca6e5221787892c/click-8.1.8-py3-none-any.whl", hash = "sha256:63c132bbbed01578a06712a2d1f497bb62d9c1c0d329b7903a866228027263b2", size = 98188, upload-time = "2024-12-21T18:38:41.666Z" },
+    { url = "https://files.pythonhosted.org/packages/85/32/10bb5764d90a8eee674e9dc6f4db6a0ab47c8c4d0d83c27f7c39ac415a4d/click-8.2.1-py3-none-any.whl", hash = "sha256:61a3265b914e850b85317d0b3109c7f8cd35a670f963866005d6ef1d5175a12b", size = 102215, upload-time = "2025-05-20T23:19:47.796Z" },
 ]
 
 [[package]]
@@ -83,25 +82,25 @@ dependencies = [
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/bf/0b/3790274f7591fc55b1f91bcc8e576338859cc632b1b17288b5bab79b769d/clickhouse-driver-0.2.9.tar.gz", hash = "sha256:050ea4870ead993910b39e7fae965dc1c347b2e8191dcd977cd4b385f9e19f87", size = 357752, upload-time = "2024-08-16T18:08:28.116Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d9/bb/8500648908e72c53a691f853a8692274c07556b128dd27a355f31e9b5140/clickhouse_driver-0.2.9-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:a46b227fab4420566ed24ee70d90076226d16fcf09c6ad4d428717efcf536446", size = 220741, upload-time = "2024-08-16T18:06:37.186Z" },
-    { url = "https://files.pythonhosted.org/packages/3a/24/78a4e543c98d5317be28a933e1fffaa9211ede6424c606db406039731aa2/clickhouse_driver-0.2.9-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:7eaa2ce5ea08cf5fddebb8c274c450e102f329f9e6966b6cd85aa671c48e5552", size = 216678, upload-time = "2024-08-16T18:06:40.057Z" },
-    { url = "https://files.pythonhosted.org/packages/5f/f4/89a62565b138da166f4046b54e4b0e91b434ed88845095f62f5eed76ae1c/clickhouse_driver-0.2.9-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:f97f0083194d6e23b5ef6156ed0d5388c37847b298118199d7937ba26412a9e2", size = 930441, upload-time = "2024-08-16T18:06:43.956Z" },
-    { url = "https://files.pythonhosted.org/packages/c3/90/75557317e1d4594e4c309d286d461806d333d57106485619a9149836695b/clickhouse_driver-0.2.9-cp39-cp39-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:a6cab5cdbb0f8ee51d879d977b78f07068b585225ac656f3c081896c362e8f83", size = 975763, upload-time = "2024-08-16T18:06:48.618Z" },
-    { url = "https://files.pythonhosted.org/packages/19/54/763ae4db2f5317f779c989e45904a3de55adc0d6481beb49a83359974351/clickhouse_driver-0.2.9-cp39-cp39-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:cdb1b011a53ee71539e9dc655f268b111bac484db300da92829ed59e910a8fd0", size = 973494, upload-time = "2024-08-16T18:06:53.842Z" },
-    { url = "https://files.pythonhosted.org/packages/9d/3f/2aec5b1ad03b2cc175fa6e0e86a13369d52b1da62920b54a1b6671f142cd/clickhouse_driver-0.2.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7bf51bb761b281d20910b4b689c699ef98027845467daa5bb5dfdb53bd6ee404", size = 943742, upload-time = "2024-08-16T18:06:59.291Z" },
-    { url = "https://files.pythonhosted.org/packages/0f/92/49dd26adc1f1bf81070ef88ce02d18874919255e4359209a332672c7ce23/clickhouse_driver-0.2.9-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:b8ea462e3cebb121ff55002e9c8a9a0a3fd9b5bbbf688b4960f0a83c0172fb31", size = 916390, upload-time = "2024-08-16T18:07:03.876Z" },
-    { url = "https://files.pythonhosted.org/packages/0d/44/b58c0b9e850ec5757fc77c83c29e811a6d98cc5409101c8848796b42fd4e/clickhouse_driver-0.2.9-cp39-cp39-musllinux_1_1_aarch64.whl", hash = "sha256:70bee21c245226ad0d637bf470472e2d487b86911b6d673a862127b934336ff4", size = 936953, upload-time = "2024-08-16T18:07:09.232Z" },
-    { url = "https://files.pythonhosted.org/packages/00/05/0f9a51bd3c649aa3cceec56429de408bb2b3eb12d3293410d0227e2a7c00/clickhouse_driver-0.2.9-cp39-cp39-musllinux_1_1_i686.whl", hash = "sha256:253a3c223b944d691bf0abbd599f592ea3b36f0a71d2526833b1718f37eca5c2", size = 924109, upload-time = "2024-08-16T18:07:13.832Z" },
-    { url = "https://files.pythonhosted.org/packages/c5/10/800c9002ab342edefbaa4d432404b96aaf61179e0b0f7117523424710b3c/clickhouse_driver-0.2.9-cp39-cp39-musllinux_1_1_ppc64le.whl", hash = "sha256:a6549b53fc5c403dc556cb39b2ae94d73f9b113daa00438a660bb1dd5380ae4d", size = 979587, upload-time = "2024-08-16T18:07:18.349Z" },
-    { url = "https://files.pythonhosted.org/packages/70/85/f4d44509dce6dd20c78f425921f0624ae5e377f77c3b42f0d44d9cdb5b4a/clickhouse_driver-0.2.9-cp39-cp39-musllinux_1_1_s390x.whl", hash = "sha256:1c685cd4abe61af1c26279ff04b9f567eb4d6c1ec7fb265af7481b1f153043aa", size = 986099, upload-time = "2024-08-16T18:07:22.115Z" },
-    { url = "https://files.pythonhosted.org/packages/6c/c4/1a8e9a1f4521f7fe46cf326b9b1f09a0b09ba4c15b9c01507d0cfefc02b7/clickhouse_driver-0.2.9-cp39-cp39-musllinux_1_1_x86_64.whl", hash = "sha256:7e25144219577491929d032a6c3ddd63c6cd7fa764af829a5637f798190d9b26", size = 953477, upload-time = "2024-08-16T18:07:25.35Z" },
-    { url = "https://files.pythonhosted.org/packages/f4/17/182d40fd30da2f31f5758a3d3003383fd9520cc728dd1445057ed8304d91/clickhouse_driver-0.2.9-cp39-cp39-win32.whl", hash = "sha256:0b9925610d25405a8e6d83ff4f54fc2456a121adb0155999972f5edd6ba3efc8", size = 199857, upload-time = "2024-08-16T18:07:27.539Z" },
-    { url = "https://files.pythonhosted.org/packages/05/96/3d7af33167edd2ec94d3bc89b2f7e093f64225ccc13bb97131e19f6c4b01/clickhouse_driver-0.2.9-cp39-cp39-win_amd64.whl", hash = "sha256:b243de483cfa02716053b0148d73558f4694f3c27b97fc1eaa97d7079563a14d", size = 214727, upload-time = "2024-08-16T18:07:29.695Z" },
-    { url = "https://files.pythonhosted.org/packages/0b/e6/41fbf5c129af0c42260883d18563b6663e22578e79142ced138df339ad42/clickhouse_driver-0.2.9-pp39-pypy39_pp73-macosx_10_9_x86_64.whl", hash = "sha256:7667ab423452754f36ba8fb41e006a46baace9c94e2aca2a745689b9f2753dfb", size = 197550, upload-time = "2024-08-16T18:08:13.673Z" },
-    { url = "https://files.pythonhosted.org/packages/db/36/16409306bb69b2195cd20728c1a89c714c839e8df17a7e825de227fba58e/clickhouse_driver-0.2.9-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:653583b1f3b088d106f180d6f02c90917ecd669ec956b62903a05df4a7f44863", size = 220738, upload-time = "2024-08-16T18:08:15.968Z" },
-    { url = "https://files.pythonhosted.org/packages/03/88/148b5a293bf3d716f0a58fc78000d29cca95950c4bbd9cd80b5d5c4bbb7f/clickhouse_driver-0.2.9-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7ef3dd0cbdf2f0171caab90389af0ede068ec802bf46c6a77f14e6edc86671bc", size = 228544, upload-time = "2024-08-16T18:08:19.048Z" },
-    { url = "https://files.pythonhosted.org/packages/44/2a/c5b29314d22b21eae39b4337207f1a65b519c2cf73df9fbb25fc60d77c99/clickhouse_driver-0.2.9-pp39-pypy39_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:11b1833ee8ff8d5df39a34a895e060b57bd81e05ea68822bc60476daff4ce1c8", size = 233877, upload-time = "2024-08-16T18:08:21.9Z" },
-    { url = "https://files.pythonhosted.org/packages/3a/d6/78f0e1ffeeb06f04ac0994362eca03cd0da42f52071241f00959699246ce/clickhouse_driver-0.2.9-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:8a3195639e6393b9d4aafe736036881ff86b6be5855d4bf7d9f5c31637181ec3", size = 199347, upload-time = "2024-08-16T18:08:25.106Z" },
+    { url = "https://files.pythonhosted.org/packages/bd/0a/e5bb8a527f88acc1ee2efca28354cf5eab40e26e974df2221ab27abf9b9a/clickhouse_driver-0.2.9-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:6ce04e9d0d0f39561f312d1ac1a8147bc9206e4267e1a23e20e0423ebac95534", size = 219246, upload-time = "2024-08-16T18:02:51.067Z" },
+    { url = "https://files.pythonhosted.org/packages/e1/fd/8d057e77c8e7f1c739fcb76277edf83a863a259505031a2f8668d5bb2221/clickhouse_driver-0.2.9-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:7ae5c8931bf290b9d85582e7955b9aad7f19ff9954e48caa4f9a180ea4d01078", size = 215395, upload-time = "2024-08-16T18:02:54.249Z" },
+    { url = "https://files.pythonhosted.org/packages/8e/71/fa053b0327a8e7cdd3f69e3f01a5683f901e2b1388f057db9d39de86f016/clickhouse_driver-0.2.9-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:3e51792f3bd12c32cb15a907f12de3c9d264843f0bb33dce400e3966c9f09a3f", size = 923279, upload-time = "2024-08-16T18:02:59.01Z" },
+    { url = "https://files.pythonhosted.org/packages/a2/a7/9be2e1a40543959c9c008bf01ae54aef793153eeef9885fca8a16ab677b8/clickhouse_driver-0.2.9-cp310-cp310-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:42fc546c31e4a04c97b749769335a679c9044dc693fa7a93e38c97fd6727173d", size = 967909, upload-time = "2024-08-16T18:03:03.453Z" },
+    { url = "https://files.pythonhosted.org/packages/7f/ec/16b320623a30de3b62f37f7aec4d33fc10a09bd095160346abd288a71822/clickhouse_driver-0.2.9-cp310-cp310-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:6a383a403d185185c64e49edd6a19b2ec973c5adcb8ebff7ed2fc539a2cc65a5", size = 965883, upload-time = "2024-08-16T18:03:09.093Z" },
+    { url = "https://files.pythonhosted.org/packages/df/8b/1997d8c3f88127441229c8080b5701e3d8b6ffd591a0890d6c518f8b1355/clickhouse_driver-0.2.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f05321a97e816afc75b3e4f9eda989848fecf14ecf1a91d0f22c04258123d1f7", size = 935935, upload-time = "2024-08-16T18:03:11.956Z" },
+    { url = "https://files.pythonhosted.org/packages/ca/60/1751a1ef2b70026c6c0a5d9b7e31a19bcd54dcc6b245de5d3db2034108cc/clickhouse_driver-0.2.9-cp310-cp310-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:be47e793846aac28442b6b1c6554e0731b848a5a7759a54aa2489997354efe4a", size = 911710, upload-time = "2024-08-16T18:03:14.958Z" },
+    { url = "https://files.pythonhosted.org/packages/a8/e0/05697a02f3e388c64c57ae5bddc5deb45f5802d0d62a10c633965a3dad8b/clickhouse_driver-0.2.9-cp310-cp310-musllinux_1_1_aarch64.whl", hash = "sha256:780e42a215d1ae2f6d695d74dd6f087781fb2fa51c508b58f79e68c24c5364e0", size = 933821, upload-time = "2024-08-16T18:03:18.801Z" },
+    { url = "https://files.pythonhosted.org/packages/7e/44/650ea0e3bfaa587b062a3da60233d061e568b412c21e429a116ce7134023/clickhouse_driver-0.2.9-cp310-cp310-musllinux_1_1_i686.whl", hash = "sha256:9e28f1fe850675e173db586e9f1ac790e8f7edd507a4227cd54cd7445f8e75b6", size = 920276, upload-time = "2024-08-16T18:03:23.252Z" },
+    { url = "https://files.pythonhosted.org/packages/fb/66/0991e9f6a14838c900446b258ba55ef47a79bc224bf74c23c92dd157ad7d/clickhouse_driver-0.2.9-cp310-cp310-musllinux_1_1_ppc64le.whl", hash = "sha256:125aae7f1308d3083dadbb3c78f828ae492e060f13e4007a0cf53a8169ed7b39", size = 973511, upload-time = "2024-08-16T18:03:27.383Z" },
+    { url = "https://files.pythonhosted.org/packages/8b/01/733d6f55344093a2b87d05db864df9044e756c13894c19000be3535b062b/clickhouse_driver-0.2.9-cp310-cp310-musllinux_1_1_s390x.whl", hash = "sha256:2f3c4fbb61e75c62a1ab93a1070d362de4cb5682f82833b2c12deccb3bae888d", size = 980838, upload-time = "2024-08-16T18:03:32.828Z" },
+    { url = "https://files.pythonhosted.org/packages/63/0c/5dba2a82fe1701c7f0db88a1d7d08134a8c80192f2548871b87c54b066c3/clickhouse_driver-0.2.9-cp310-cp310-musllinux_1_1_x86_64.whl", hash = "sha256:0dc03196a84e32d23b88b665be69afae98f57426f5fdf203e16715b756757961", size = 950460, upload-time = "2024-08-16T18:03:37.034Z" },
+    { url = "https://files.pythonhosted.org/packages/5b/24/08f1d0afceaf5e2f325d851add6b9f80bd71c6c540dc29a1197d8d37eadb/clickhouse_driver-0.2.9-cp310-cp310-win32.whl", hash = "sha256:25695d78a1d7ad6e221e800612eac08559f6182bf6dee0a220d08de7b612d993", size = 198432, upload-time = "2024-08-16T18:03:39.119Z" },
+    { url = "https://files.pythonhosted.org/packages/73/9b/6c110f95530c26b9297bf204e487e645c90eb28dd3ca2cf40ac8ae61e4b4/clickhouse_driver-0.2.9-cp310-cp310-win_amd64.whl", hash = "sha256:367acac95398d721a0a2a6cf87e93638c5588b79498a9848676ce7f182540a6c", size = 213541, upload-time = "2024-08-16T18:03:41.141Z" },
+    { url = "https://files.pythonhosted.org/packages/76/7a/961029af713ae42e43f2691abbcee248ed057229d24613d693260edbcb32/clickhouse_driver-0.2.9-pp310-pypy310_pp73-macosx_10_9_x86_64.whl", hash = "sha256:45a3d5b1d06750fd6a18c29b871494a2635670099ec7693e756a5885a4a70dbf", size = 197672, upload-time = "2024-08-16T18:07:32.041Z" },
+    { url = "https://files.pythonhosted.org/packages/5b/d4/1da419cb98e829bbacea4c07e184a747804f11543ff976c6539f4fbd62f2/clickhouse_driver-0.2.9-pp310-pypy310_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:8415ffebd6ca9eef3024763abc450f8659f1716d015bd563c537d01c7fbc3569", size = 220898, upload-time = "2024-08-16T18:07:34.029Z" },
+    { url = "https://files.pythonhosted.org/packages/86/d6/f9042e885f4510ab3a09ef2f5d1acfd40f328794dff66ae12e52954cda04/clickhouse_driver-0.2.9-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:ace48db993aa4bd31c42de0fa8d38c94ad47405916d6b61f7a7168a48fb52ac1", size = 228801, upload-time = "2024-08-16T18:07:35.959Z" },
+    { url = "https://files.pythonhosted.org/packages/82/62/88ece5b7ca32d8a4bb4b1d0250cb54d1cfb1e7abfc759355d1fb51fda23a/clickhouse_driver-0.2.9-pp310-pypy310_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:b07123334fe143bfe6fa4e3d4b732d647d5fd2cfb9ec7f2f76104b46fe9d20c6", size = 234107, upload-time = "2024-08-16T18:07:38.296Z" },
+    { url = "https://files.pythonhosted.org/packages/b2/ba/af473c973b853a9de1312d73f929f39e17424bd723966b398b898188a13a/clickhouse_driver-0.2.9-pp310-pypy310_pp73-win_amd64.whl", hash = "sha256:e2af3efa73d296420ce6362789f5b1febf75d4aa159a479393f01549115509d5", size = 199442, upload-time = "2024-08-16T18:07:41.879Z" },
 ]
 
 [[package]]
