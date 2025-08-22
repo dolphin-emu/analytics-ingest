@@ -8,7 +8,7 @@ without requiring server side changes.
 
 ## Requirements
 
-- Python 3 and Poetry
+- Python 3 and uv
 - ClickHouse
 
 ## Setup
@@ -23,15 +23,15 @@ nix run github:dolphin-emu/analytics-ingest
 
 ### Without Nix
 
-This project uses [Poetry](https://python-poetry.org/) for dependency
+This project uses [uv](https://github.com/astral-sh/uv) for dependency
 management.
 
 ```bash
-# Install dependencies (use --no-dev to skip optional dev dependencies).
-poetry install
+# Install dependencies.
+uv sync
 
 # Run the server
-poetry run analytics-ingest
+uv run analytics-ingest
 ```
 
 ## License
