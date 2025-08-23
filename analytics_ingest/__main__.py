@@ -148,7 +148,7 @@ def deserialize(report: bytes) -> Dict[str, tuple[Any, DataType]]:
     return data
 
 
-ch = ClickHouseInterface(host="localhost")
+#ch = ClickHouseInterface(host="localhost")
 
 
 def write_to_clickhouse(data: Dict[str, Any]):
@@ -183,6 +183,7 @@ def do_report():
 
 @bottle.get("/metrics")
 def do_metrics():
+    bottle.response.content_type = prometheus_client.CONTENT_TYPE_LATEST
     return prometheus_client.generate_latest(prometheus_client.REGISTRY)
 
 
