@@ -148,7 +148,7 @@ def deserialize(report: bytes) -> Dict[str, tuple[Any, DataType]]:
     return data
 
 
-#ch = ClickHouseInterface(host="localhost")
+ch = ClickHouseInterface(host="localhost")
 
 
 def write_to_clickhouse(data: Dict[str, Any]):
