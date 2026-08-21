@@ -15,7 +15,6 @@ import time
 
 from typing import Any, Dict, Optional
 
-
 # Monitoring metrics.
 METRIC_REPORTS = prometheus_client.Counter("reports", "Number of reports")
 METRIC_SUCCESS = prometheus_client.Counter(
@@ -33,6 +32,7 @@ ALLOWED_FIELD_NAME_RE = re.compile(r"^[a-zA-Z0-9_-]+$")
 # Dashboard URL to redirect to. Configured via CLI flag.
 DASHBOARD_URL: Optional[str] = os.environ.get("DASHBOARD_URL")
 
+
 # Interface to ClickHouse: maintains not only the client connection to the
 # database, but also a cache of the event table schema so we can support some
 # rough form of dynamic schema updating.
@@ -41,7 +41,7 @@ class ClickHouseInterface:
         self.client = clickhouse_driver.Client(*args, **kwargs)
 
         self.columns = set()
-        for (name, _, _, _, _, _, _) in self.client.execute("DESCRIBE TABLE event"):
+        for name, _, _, _, _, _, _ in self.client.execute("DESCRIBE TABLE event"):
             self.columns.add(name)
 
     def add_column(self, name: str, ftype: DataType):
