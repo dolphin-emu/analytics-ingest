@@ -17,7 +17,7 @@ analytics-ingest = "analytics_ingest.__main__:main"
 
 [dependency-groups]
 dev = [
-    "black>=26.5.1,<27",
+    "black>=26.10.1,<27",
     "pytest>=9.1.1,<10",
 ]
 
